@@ -14,7 +14,7 @@ const main = async () => {
     const impersonatedSigner = await ethers.getSigner(USDCHolder);
 
     const amountOut = ethers.parseEther("2");
-    const amountInMax = ethers.parseUnits("30000000000000",6);
+    const amountInMax = ethers.parseUnits("3000000000000000",6);
 
     const USDC = await ethers.getContractAt("IERC20", USDCAddress);
     const DAI = await ethers.getContractAt("IERC20", DAIAddress);
